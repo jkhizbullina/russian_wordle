@@ -1,0 +1,117 @@
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size:16px;
+    margin:0 auto;
+}
+
+#title {
+    width: 100%;
+    padding:5px;
+    text-align: center;
+    font-size:220%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+#message {
+    transition: all 0.5s;
+    display: none;
+    position: absolute;
+    top:10%;
+    left:50%;
+    margin-left: -200px;
+    width: 400px;
+    text-align: center;
+    background-color: #333;
+    color:#fff;
+    font-size:16px;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+#gameGrid {
+    width: 55%;
+    height: 48%;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(5, 1fr);
+    justify-content:space-between;
+    align-content:space-between;
+}
+
+.gameLetter {
+    margin:2px;
+    display: grid;
+    border: 2px solid #ccc;
+    font-size: 32px;
+    font-weight: bold;
+    align-items: center;
+    justify-items: center;
+}
+
+.active {
+    border-color: #000;
+}
+
+.correctPlace {
+    background-color: #57a639;
+    border-color: #57a639;
+    color: #fff;
+}
+
+.incorrectPlace {
+    background-color: #d4c202;
+    border-color: #d4c202;
+    color: #fff;
+}
+
+.incorrectLetter {
+    background-color: #888;
+    border-color: #888;
+    color: #fff;
+}
+
+#gameKeyboard {
+    width: 600px;
+}
+
+#gameKeyboard > div {
+    width: 100%;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.gameKey {
+    border: 0;
+    text-align: center;
+    padding:20px 10px 20px 10px;
+    margin:2px;
+    background-color: #ccc;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.gameKey.letter {
+    width:40px;
+    padding:20px 0 20px 0;
+}
+
+.gameKey:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
