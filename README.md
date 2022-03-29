@@ -1,2 +1,2 @@
 # wordle
- A pure JS wordle clone.
+ A pure JS wordle clone. WIP.
